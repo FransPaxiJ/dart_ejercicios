@@ -16,6 +16,7 @@ class Perro extends Animal {
 class Gato extends Animal {
   @override
   int? patas = 4;
+  int? cola = 1;
 
   @override
   void emitirSonido() {
@@ -30,6 +31,6 @@ void main() {
   print('Perro: ${perro.patas} patas');
   perro.emitirSonido();
 
-  print('Gato: ${gato.patas} patas');
+  print('Gato: ${gato.patas} patas y ${gato.cola} cola');
   gato.emitirSonido();
 }
